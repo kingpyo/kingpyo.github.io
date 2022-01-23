@@ -6,8 +6,11 @@ const imgId = document.querySelector("#img");
 const colorList = [
     "#E8EDEA",
     "#ebf7ff",
-    "#ebfae8"
+    "#ebfae8",
+    "#fdf2ef",
+    "#fdfbef"
 ]
+
 
 const chosenBackgrounColor = colorList[Math.floor(Math.random()*colorList.length)];
 document.body.style.backgroundColor = chosenBackgrounColor;
