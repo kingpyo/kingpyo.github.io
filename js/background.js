@@ -7,7 +7,6 @@ const colorList = [
     "#E8EDEA",
     "#ebf7ff",
     "#ebfae8",
-    "#fdf2ef",
     "#fdfbef"
 ]
 
