@@ -18,7 +18,7 @@ function geoSuccess(position) {
         weather.innerText = `${data.weather[0].main} / ${data.main.temp}°C`;
     });
     // air pollution
-    const url2 = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_KEY}`
+    const url2 = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_KEY}`
     fetch(url2)
     .then((response) => response.json())
     .then((data) => {
