@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>chrome</title>
+</head>
+<body>
+    <header id="headbox">
+        <div class="Shortcut_url">
+            <ul>
+                <li><a href="https://www.google.com/"><img src="img/google.png"></a></li>
+                <li><a href="https://www.naver.com/"><img src="img/naver.png"></a></li>
+                <li><a href="https://www.youtube.com/"><img src="img/youtube.png"></a></li>
+                <li><a href="https://nomadcoders.co/"><img src="img/nomad.png"></a></li>
+                
+            </ul>
+        </div>
+        <div class="changecolor_btn">
+            <form id="nightday-button">
+                <button class="button" type="button" value="">
+                    <img id="img" src="img/light.png" width="40px" height="44px">
+                </button>
+            </form>
+        </div>
+    </header>
+    <main class="main_screen">
+        <div class="main_big">
+            <div id="big_div1">
+                <div id="clock"></div>
+                <div id="thisDate"></div>
+            </div>
+            <div id="big_div2">
+                <div id="city"></div>
+                <div id="icon"></div>
+                <div id="weather"></div>
+                <div id="dust">
+                    <div id="fine_dust">
+                        <strong>미세먼지</strong>
+                        <div></div>
+                    </div>
+                    <div id="ultrafine_dust">
+                        <strong>초미세먼지</strong>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div id="big_div3">
+                <div>To-Do List</div>
+                <form id="todo_form">
+                    <input id="todo_input" required type="text" placeholder="Write a To do and press enter">
+                </form>
+                <ul id="todo_list"></ul>
+            </div>
+        </div>
+        <div class="main_small">
+            <div id="small_div1" >
+                <form id="login_form" class="hidden">
+                    <input id="login_input"required maxlength="15" type="text" placeholder="What is your name?">
+                    <input class="hidden" type="submit" value="login">
+                </form>
+                <h1 id="greeting" class="hidden"></h1>
+            </div>
+            <div id="small_div2">
+                <div class="body">
+                <div class="calendar">
+                    <div class="header">
+                        <div class="year-month"></div>
+                        <!-- <div class="nav">
+                            <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+                            <button class="nav-btn go-today" onclick="goToday()">Today</button>
+                            <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
+                          </div> -->
+                        </div>
+                    </div>
+                    <div class="main">
+                        <div class="days">
+                            <div class="day">일</div>
+                            <div class="day">월</div>
+                            <div class="day">화</div>
+                            <div class="day">수</div>
+                            <div class="day">목</div>
+                            <div class="day">금</div>
+                            <div class="day">토</div>
+                        </div>
+                        <div class="dates"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/background.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/calendar.js"></script>
+
+</body>
+</html>
